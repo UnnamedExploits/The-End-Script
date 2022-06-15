@@ -1,0 +1,20 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "The End"})
+OrionLib:MakeNotification({
+	Name = "Hello :D",
+	Content = "Hi This Is Lucian Check Out Our Other Scripts",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+local SH = Window:MakeTab({
+	Name = "Script Hub",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+SH:AddButton({
+	Name = "Bedwars",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
+end)
